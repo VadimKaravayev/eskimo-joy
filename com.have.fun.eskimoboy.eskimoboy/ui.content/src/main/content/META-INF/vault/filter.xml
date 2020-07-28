@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/eskimoboy" mode="merge"/>
+    <filter root="/content/eskimoboy" mode="merge"/>
+    <filter root="/content/dam/eskimoboy" mode="merge"/>
+    <filter root="/content/experience-fragments/eskimoboy" mode="merge"/>
+</workspaceFilter>
