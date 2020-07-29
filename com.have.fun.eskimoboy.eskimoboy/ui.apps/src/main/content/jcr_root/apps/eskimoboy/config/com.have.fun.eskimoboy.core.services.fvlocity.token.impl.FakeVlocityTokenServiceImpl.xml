@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+          url="https://test.salesforce.com"
+          token_path="/services/oauth2/token"
+          username="api_user@btenterprisevalue.com"
+          password="Welcome20204bcinaxjAHq8vuoYrt9mtORMm"
+          grant_type="password"
+          client_id="3MVG92u_V3UMpV.hcYjydsjbCN6SAE7nW2q0NA.YrWRb2_9_ausn25Ib_uZa9A3Kfp43P7vzaBlrTv1Wd.jfc"
+          client_secret="852A9763FB96676D2790133D00D58A6EE32D54BD2F319D424A4B4DC566ED88E5" />
