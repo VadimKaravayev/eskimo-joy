@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="SME - Benefits and USP Module dialog"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            granite:class="benefits"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items jcr:primaryType="nt:unstructured">
+                    <general
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="General"
+                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <headline
+                                                    jcr:primaryType="nt:unstructured"
+                                                    fieldLabel="Headline"
+                                                    name="./headline"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </general>
+                    <items
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Items"
+                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <viewType
+                                                    jcr:primaryType="nt:unstructured"
+                                                    class="cq-dialog-dropdown-showhide"
+                                                    cq-dialog-dropdown-showhide-target=".benefits-showhide-target"
+                                                    fieldLabel="View type"
+                                                    name="./viewType"
+                                                    sling:resourceType="granite/ui/components/foundation/form/select">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <visual
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Visual"
+                                                            value="visual"/>
+                                                    <textOnly
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Text-only"
+                                                            value="textOnly"/>
+                                                </items>
+                                            </viewType>
+                                            <visualFieldSet
+                                                    jcr:primaryType="nt:unstructured"
+                                                    class="benefits-showhide-target"
+                                                    showhidetargetvalue="visual"
+                                                    sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <visual
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield">
+                                                        <field
+                                                                jcr:primaryType="nt:unstructured"
+                                                                acs-commons-nested="JSON_STORE"
+                                                                name="./sections"
+                                                                sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <column
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <title
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                required="{Boolean}true"
+                                                                                fieldLabel="Title"
+                                                                                name="./title"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                                                                        <image
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                name="./image"
+                                                                                fieldLabel="Image"
+                                                                                required="{Boolean}true"
+                                                                                rootPath="/content/dam"
+                                                                                enableDragAndDrop="true"
+                                                                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"/>
+                                                                        <altText
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                required="{Boolean}true"
+                                                                                fieldLabel="Alt text"
+                                                                                name="./altText"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                                                                        <text
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                required="{Boolean}true"
+                                                                                fieldLabel="Text"
+                                                                                name="./text"
+                                                                                useFixedInlineToolbar="{Boolean}true"
+                                                                                sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"/>
+                                                                        <linkTitle
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                fieldLabel="Link title"
+                                                                                name="./linkTitle"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                                                                        <linkPath
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                name="./linkPath"
+                                                                                fieldLabel="Link path"
+                                                                                rootPath="/content"
+                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
+                                                                    </items>
+                                                                </column>
+                                                            </items>
+                                                        </field>
+                                                    </visual>
+                                                </items>
+                                            </visualFieldSet>
+                                            <textOnlyFieldSet
+                                                    jcr:primaryType="nt:unstructured"
+                                                    class="benefits-showhide-target"
+                                                    showhidetargetvalue="textOnly"
+                                                    sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <textOnly
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                            sling:resourceSuperType="bt/sme-transform/components/content/benefits/cq:dialog/content/items/tabs/items/items/items/columns/items/column/items/visualFieldSet/items/visual">
+                                                        <field
+                                                                jcr:primaryType="nt:unstructured"
+                                                                name="./textOnly"
+                                                                sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                                                            <items
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:hideChildren="[image,altText]">
+                                                            </items>
+                                                        </field>
+                                                    </textOnly>
+                                                </items>
+                                            </textOnlyFieldSet>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </items>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

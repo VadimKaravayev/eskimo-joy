@@ -1,0 +1,9 @@
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}">
+    <div class="cq-placeholder" data-emptyText="${component.title}"></div>
+</sly>
+<sly data-sly-use.model="com.have.fun.eskimoboy.core.models.ProductBreakdownModel"></sly>
+<div class="aem-react-component" data-component-name="TBD"
+     data-sly-attribute.data-config='{
+        "headline": "${component.title}",
+        "products": "${model.jsonProducts}"
+}'></div>

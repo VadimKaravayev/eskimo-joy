@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
           xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
-          url="https://btenterprisevalue--smedev1.my.salesforce.com"
-          ints="/services/apexrest/vlocity_cmt/v3/catalogs/CTLG_POC/offers" />
+          content_fragment_parent_path="/content/dam/eskimoboy"
+          content_fragment_model_path="/conf/eskimoboy/settings/dam/cfm/models/product" />
