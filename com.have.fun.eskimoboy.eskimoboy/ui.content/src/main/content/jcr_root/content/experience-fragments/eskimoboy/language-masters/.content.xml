@@ -3,5 +3,5 @@
     cq:adobeTargetExportFormat="html"
     jcr:primaryType="sling:OrderedFolder"
     jcr:title="Language Masters">
-    <${language_country.split('_').get(0)}/>
+    <en/>
 </jcr:root>

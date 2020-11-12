@@ -1,3 +1,8 @@
 <sly data-sly-test="${wcmmode.edit || wcmmode.design}">
     <div class="cq-placeholder" data-emptyText="${component.title}"></div>
 </sly>
+
+<div data-sly-attribute.data-config='{
+        "headline": "${properties.headline}",
+        "products": [${properties.viewType == "visual" ? properties.visual : properties.textOnly}]
+}'></div>

@@ -1,13 +1,17 @@
 {
     "compilerOptions": {
+        "experimentalDecorators": true,
         "target": "es5",
-        "module": "es6",
+        "module": "ESNext",
         "baseUrl": "../ui.frontend",
+        "jsx": "react",
         "removeComments": true,
-        "allowJs": true,
         "preserveConstEnums": true,
         "allowSyntheticDefaultImports": true,
-        "sourceMap": true
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "allowJs": false
     },
-    "include": [ "./src/**/*.ts" ]
+    "include": ["src/main/**/*"],
+    "exclude": ["node_modules", "build", "scripts"]
 }

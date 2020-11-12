@@ -1,0 +1,6 @@
+{
+  "bundle-cta" : {
+    "jcr:primaryType": "nt:unstructured",
+    "postCheckPage": "/content/bt/business/en/post-check-page"
+  }
+}

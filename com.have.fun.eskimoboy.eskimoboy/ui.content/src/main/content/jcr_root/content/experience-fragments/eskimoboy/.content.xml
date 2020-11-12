@@ -4,5 +4,6 @@
     cq:allowedTemplates="[/conf/(.*)/settings/wcm/templates/experience-fragment(.*)?]"
     jcr:primaryType="sling:OrderedFolder"
     jcr:title="eskimoboy Fragments">
-    <${language_country.split('_').get(1)}/>
+    <language-masters/>
+    <us/>
 </jcr:root>
