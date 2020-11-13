@@ -170,5 +170,23 @@ module.exports = {
             ],
           }
         },
+      {
+        ...defaults,
+        name: 'skm.Benefits',
+        categories: ['skm.Benefits'],
+        dependencies: [
+          'skm.core',
+          'ui.frontend.commons',
+          'ui.frontend.vendors'
+        ],
+        assets: {
+          js: [
+            'dist/clientlib-site/js/*Benefits*.js',
+          ],
+          css: [
+            'dist/clientlib-site/css/*Benefits*.css',
+          ],
+        }
+      },
     ]
 };

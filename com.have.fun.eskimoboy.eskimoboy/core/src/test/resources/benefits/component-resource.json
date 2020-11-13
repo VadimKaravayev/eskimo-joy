@@ -1,0 +1,49 @@
+{
+  "visualNonBenefit": {
+    "jcr:primaryType": "nt:unstructured",
+    "headline": "Benefits",
+    "visual": [],
+    "viewType": "visual"
+  },
+  "visualOneBenefit": {
+    "jcr:primaryType": "nt:unstructured",
+    "headline": "Benefits",
+    "viewType": "visual",
+    "visual": [
+      "{\"title\": \"4G Assure\", \"image\": \"/content/dam/bt/4g-assure.png\", \"altText\": \"4G Assure\", \"text\": \"<p>4G Assure description</p>\", \"linkTitle\": \"View More\", \"linkPath\": \"/content/bt/business\", \"analyticsLinkName\": \"View More\"}"
+    ]
+  },
+  "visualTwoBenefits": {
+    "jcr:primaryType": "nt:unstructured",
+    "headline": "Benefits",
+    "visual": [
+      "{\"title\": \"4G Assure\", \"image\": \"/content/dam/bt/4g-assure.png\", \"altText\": \"4G Assure\", \"text\": \"<p>4G Assure description</p>\", \"linkTitle\": \"View More\", \"linkPath\": \"/content/bt/business\", \"analyticsLinkName\": \"View More\"}",
+      "{\"title\": \"Cloud Voice\", \"image\": \"/content/dam/bt/cloud-voice.png\", \"altText\": \"Cloud Voice\", \"text\": \"<p>Cloud Voice description</p>\", \"linkTitle\": \"View More\", \"linkPath\": \"/content/bt/business\", \"analyticsLinkName\": \"View More\"}"
+    ],
+    "viewType": "visual"
+  },
+  "textNonBenefit": {
+    "jcr:primaryType": "nt:unstructured",
+    "headline": "Benefits",
+    "textOnly": [],
+    "viewType": "textOnly"
+  },
+  "textOneBenefit": {
+    "jcr:primaryType": "nt:unstructured",
+    "headline": "Benefits",
+    "viewType": "textOnly",
+    "textOnly": [
+      "{\"title\": \"Open Sign\", \"text\": \"<p>Open Sign description</p>\", \"linkTitle\": \"View More\", \"linkPath\": \"/content/bt/business\", \"analyticsLinkName\": \"View More\"}"
+    ]
+  },
+  "textTwoBenefits": {
+    "jcr:primaryType": "nt:unstructured",
+    "headline": "Benefits",
+    "viewType": "textOnly",
+    "textOnly": [
+      "{\"title\": \"Open Sign\", \"text\": \"<p>Open Sign description</p>\", \"linkTitle\": \"View More\", \"linkPath\": \"/content/bt/business\", \"analyticsLinkName\": \"View More\"}",
+      "{\"title\": \"Price Promise\", \"text\": \"<p>Price Promise description</p>\", \"linkTitle\": \"View More\", \"linkPath\": \"/content/bt/business\", \"analyticsLinkName\": \"View More\"}"
+    ]
+  }
+
+}

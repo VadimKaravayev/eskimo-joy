@@ -1,0 +1,24 @@
+@import "src/main/webpack/base/sass/_shared.scss";
+
+.headline {
+  @include fontSizes(28px, 36px);
+  font-family: $btCurve;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 30px;
+  text-align: center;
+
+  @include media ('>=tablet'){
+    @include fontSizes(32px, 40px);
+    margin-bottom: 40px;
+  }
+
+  @include media ('>=desktop'){
+    @include fontSizes(40px, 48px);
+    margin-bottom: 60px;
+  }
+
+  &__left {
+    text-align: left;
+  }
+}

@@ -1,8 +1,14 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories='skm.Benefits'}"
+></sly>
+
 <sly data-sly-test="${wcmmode.edit || wcmmode.design}">
     <div class="cq-placeholder" data-emptyText="${component.title}"></div>
 </sly>
 
-<div data-sly-attribute.data-config='{
+<sly data-sly-use.model="com.have.fun.eskimoboy.core.models.BenefitsModel"></sly>
+
+<div class="aem-react-component" data-component-name="SKM_Benefits" data-sly-attribute.data-config='{
         "headline": "${properties.headline}",
-        "products": [${properties.viewType == "visual" ? properties.visual : properties.textOnly}]
+        "products": ${model.products}
 }'></div>

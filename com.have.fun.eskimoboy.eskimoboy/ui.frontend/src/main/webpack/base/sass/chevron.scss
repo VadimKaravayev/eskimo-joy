@@ -1,0 +1,20 @@
+@mixin chevron($color, $size: 6px, $weight: 2px, $position: 'right') {
+  content: '';
+  border-style: solid;
+  border-width: $weight $weight 0 0;
+  border-color: $color;
+  height: $size;
+  width: $size;
+  display: inline-block;
+  vertical-align: top;
+
+  @if $position == 'right' {
+    transform: rotate(45deg);
+  } @else if $position == 'left' {
+    transform: rotate(-135deg);
+  } @else if $position == 'bottom' {
+    transform: rotate(135deg);
+  } @else {
+    transform: rotate(-45deg);
+  }
+}

@@ -1,0 +1,136 @@
+@import "src/main/webpack/base/sass/_shared.scss";
+
+.articleList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin: 0 -15px;
+
+  @include media('>=tablet') {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+
+  @include media('>=desktop') {
+    margin: 0 -10px;
+  }
+
+  &__small {
+    margin-bottom: 10px;
+
+    @include media('>=desktop') {
+      margin-bottom: 40px;
+    }
+
+    .articleListItem {
+      margin-bottom: 20px;
+
+      @include media('>=tablet') {
+        width: 33.332%;
+      }
+
+      .itemBox {
+        background: #F4F4F4;
+        padding: 15px;
+
+        b {
+          font-family: $btCurve;
+        }
+
+        @include media('>=desktop') {
+          padding: 20px;
+        }
+      }
+
+      .title {
+        @include fontSizes(20px, 28px);
+
+        @include media('>=tablet') {
+          @include fontSizes(20px, 28px);
+        }
+
+        @include media('>=desktop') {
+          @include fontSizes(20px, 28px);
+        }
+      }
+    }
+  }
+}
+
+.articleListItem {
+  color: black;
+  font: 400 16px/24px $btCurve;
+  margin-bottom: 30px;
+
+  @include media('>=tablet') {
+    display: flex;
+    width: 47%;
+    padding: 0 10px;
+    margin-bottom: 40px;
+  }
+
+  .imageBox {
+    margin-bottom: 20px;
+
+    img {
+      vertical-align: top;
+      width: 100%;
+    }
+  }
+
+  .title {
+    color: black;
+    font: 500 24px/32px $btCurve;
+    margin: 0 0 20px;
+
+    @include media('>=tablet') {
+      @include fontSizes(28px, 36px);
+    }
+
+    @include media('>=desktop') {
+      @include fontSizes(32px, 40px);
+    }
+  }
+
+  .content {
+    padding: 0 15px;
+
+    @include media('>=tablet') {
+      padding: 0;
+    }
+
+    p {
+      @include commonTextSize();
+      color: black;
+      margin: 0 0 20px;
+    }
+    p:empty {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .buttonBox {
+    a {
+      @include fontSizes(16px, 21px);
+      color: $bt-indigo;
+      font-family: inherit;
+      position: relative;
+      padding-right: 17px;
+
+      .chevron {
+        position: absolute;
+        height: 7px;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &:before {
+          @include chevron($bt-indigo, 7px);
+        }
+      }
+    }
+  }
+}
