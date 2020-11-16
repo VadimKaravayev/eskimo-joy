@@ -1,0 +1,110 @@
+@import "src/main/webpack/base/sass/_shared.scss";
+
+$hoverColor: #550E85;
+
+.coloredButton {
+  border: 1px solid transparent;
+  font: 1rem/1.3125rem $btCurve;
+  padding: 11px 20px 7px;
+  background: $bt-indigo;
+  border-radius: 5px;
+  transition: all .25s;
+  color: $white;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: default;
+  }
+
+  &:hover {
+    background: $hoverColor;
+  }
+
+  &.purpleSecondary {
+    background: white;
+    border-color: $bt-indigo;
+    color: $bt-indigo;
+
+    a {
+      color: $bt-indigo;
+    }
+
+    &:hover {
+      background: $bt-indigo;
+      color: $white;
+
+      a {
+        color: white;
+      }
+    }
+  }
+
+  &.invertedBlack {
+    background: white;
+    border-color: $grey-medium;
+    color: $grey-medium;
+
+    &:hover {
+      background: #EEE7F7;
+      border-color: #EEE7F7;
+    }
+  }
+
+  &.pink {
+    background: #F200F5;
+    border-color: #F200F5;
+    color: black;
+
+    a {
+      color: black;
+    }
+
+    &:hover {
+      background: #DC00E0;
+      border-color: #DC00E0;
+    }
+  }
+
+  &.linkStyle,
+  &.leftArrowLink,
+  &.rightArrowLink {
+    background: none;
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+    color: $bt-indigo;
+    text-align: left;
+
+    &:hover {
+      background: none;
+      color: $hoverColor;
+    }
+  }
+
+  &.leftArrowLink {
+    &:before{
+      content: '';
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      border: solid currentColor;
+      border-width: 1px 0 0 1px;
+      transform: rotate(-45deg);
+      margin: 0 3px 1px 0;
+    }
+  }
+
+  &.rightArrowLink {
+    &:after{
+      content: '';
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      border: solid currentColor;
+      border-width: 1px 0 0 1px;
+      transform: rotate(135deg);
+      margin: 0 0 1px 8px;
+    }
+  }
+}

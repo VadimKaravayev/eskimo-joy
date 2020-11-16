@@ -8,33 +8,25 @@
             granite:class="benefits"
             sling:resourceType="granite/ui/components/coral/foundation/container">
         <items jcr:primaryType="nt:unstructured">
-            <tabs
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="granite/ui/components/coral/foundation/tabs">
+            <tabs jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/tabs">
                 <items jcr:primaryType="nt:unstructured">
-                    <general
-                            jcr:primaryType="nt:unstructured"
-                            jcr:title="General"
-                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                    <general jcr:primaryType="nt:unstructured" jcr:title="General" sling:resourceType="granite/ui/components/coral/foundation/container">
                         <items jcr:primaryType="nt:unstructured">
-                            <columns
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                            <columns jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
                                 <items jcr:primaryType="nt:unstructured">
-                                    <column
-                                            jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <column jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
                                         <items jcr:primaryType="nt:unstructured">
-                                            <headline
-                                                    jcr:primaryType="nt:unstructured"
-                                                    fieldLabel="Headline"
-                                                    name="./headline"
-                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
-                                            <secondaryHeadline
-                                                    jcr:primaryType="nt:unstructured"
-                                                    fieldLabel="Secondary Headline"
-                                                    name="./secondaryHeadline"
-                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                                            <headline jcr:primaryType="nt:unstructured" fieldLabel="Headline" name="./headline" sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                                            <secondaryHeadline jcr:primaryType="nt:unstructured" fieldLabel="Secondary Headline" name="./secondaryHeadline" sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                                            <isFabulous jcr:primaryType="nt:unstructured" granite:class="cq-dialog-checkbox-showhide" name="./isFabulous" sling:resourceType="granite/ui/components/coral/foundation/form/checkbox" text="Is it fabulous?" uncheckedValue="false" value="true">
+                                                <granite:data jcr:primaryType="nt:unstructured" cq-dialog-checkbox-showhide=".togglefield"/>
+                                            </isFabulous>
+                                            <toggle jcr:primaryType="nt:unstructured" granite:class="togglefield" sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <delta jcr:primaryType="nt:unstructured" fieldLabel="Delta" name="./delta" sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                                                    <epsilon jcr:primaryType="nt:unstructured" fieldLabel="Epsilon" name="./epsilon" sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                                                </items>
+                                            </toggle>
                                         </items>
                                     </column>
                                 </items>

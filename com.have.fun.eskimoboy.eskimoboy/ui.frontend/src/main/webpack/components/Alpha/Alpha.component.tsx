@@ -7,8 +7,8 @@ import {
 import styles from './styles.module.scss';
 
 type AlphaProps = {
-    headline?: string,
-    secondaryHeadline?: string
+    headline?: string;
+    secondaryHeadline?: string;
 };
 
 const Alpha: React.FC<AlphaProps> = ({

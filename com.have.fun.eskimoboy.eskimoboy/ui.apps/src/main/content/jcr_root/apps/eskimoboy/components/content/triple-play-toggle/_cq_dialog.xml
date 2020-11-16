@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="SKM - Triple Play Toggle"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <columns jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                <items jcr:primaryType="nt:unstructured">
+                    <container jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <headline jcr:primaryType="nt:unstructured" fieldLabel="Headline" name="./headline" required="true" sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                            <secondaryHeadline jcr:primaryType="nt:unstructured" fieldLabel="Secondary Headline" name="./secondaryHeadline" sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext" useFixedInlineToolbar="true"/>
+                            <toggleText jcr:primaryType="nt:unstructured" fieldLabel="Toggle Text" name="./toggleText" required="true" sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                            <linkTitle jcr:primaryType="nt:unstructured" fieldLabel="Link Title" name="./linkTitle" sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                            <linkPath jcr:primaryType="nt:unstructured" fieldLabel="Link Path" name="./linkPath" rootPath="/content" sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
+                            <analyticsLinkName jcr:primaryType="nt:unstructured" fieldLabel="Analytics Link Name" name="./analyticsLinkName" sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                            <isActiveByDefault jcr:primaryType="nt:unstructured" name="./isActiveByDefault" sling:resourceType="granite/ui/components/coral/foundation/form/checkbox" text="Is Toggle Active By Default" uncheckedValue="false" value="true"/>
+                            <queryParameterName jcr:primaryType="nt:unstructured" fieldDescription="This query parameter name controls whether the toggle button will be active or not (true or false in the value)" fieldLabel="Query Parameter Name" name="./queryParameterName" sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                        </items>
+                    </container>
+                </items>
+            </columns>
+        </items>
+    </content>
+</jcr:root>

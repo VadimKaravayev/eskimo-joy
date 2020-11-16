@@ -1,0 +1,39 @@
+@import "src/main/webpack/base/sass/_shared.scss";
+
+.linkRow {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 20px;
+  strong {
+    color: #5514B4;
+    position: relative;
+    font-family: $btCurve;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      right: -14px;
+      top: calc(50% - 4px);
+      transform: translateY(-50%) rotate(45deg);
+      height: 2px;
+      width: 7px;
+      background: currentColor;
+      border-radius: 2px;
+    }
+    &:after {
+      top: calc(50%);
+      transform: translateY(-50%) rotate(-45deg);
+    }
+  }
+  &Center {
+    text-align: center;
+  }
+  &Left {
+    text-align: left;
+  }
+  &Right {
+    text-align: right;
+  }
+}

@@ -1,0 +1,46 @@
+@import "src/main/webpack/base/sass/_shared.scss";
+
+.toggleButton {
+  position: relative;
+  border: none;
+  background: none;
+  margin: 0 10px;
+  padding: 0;
+  font-size: 0;
+
+  &.checked {
+    .toggleButtonCircle {
+      background: #1B8811;
+    }
+    .toggleButtonCircle:before {
+      transform: translateX(23px);
+    }
+  }
+}
+
+@mixin setSize($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+.toggleButtonCircle {
+  display: block;
+  @include setSize(50px, 26px);
+  border-radius: 20px;
+  background: $grey-medium;
+  border: 2px solid $white;
+  position: relative;
+  transition: .2s background;
+  &:before {
+    content: '';
+    will-change: transform;
+    @include setSize(14px, 14px);
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    left: 5px;
+    top: 4px;
+    transform: translateX(0);
+    transition: .2s transform;
+  }
+}

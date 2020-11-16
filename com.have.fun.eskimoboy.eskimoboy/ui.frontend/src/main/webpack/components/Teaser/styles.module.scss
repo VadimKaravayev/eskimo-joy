@@ -1,0 +1,80 @@
+@import "src/main/webpack/base/sass/_shared.scss";
+
+.teaser {
+    margin-bottom: 30px;
+    background: $bt-indigo;
+    position: relative;
+  
+    @include media('>=tablet') {
+      display: flex;
+      align-items: center;
+      min-height: 158px;
+      margin-bottom: 40px;
+    }
+  
+    @include media('>=desktop') {
+      margin-bottom: 60px;
+    }
+  
+    .teaserImage {
+      background-repeat: no-repeat;
+      background-position: 50% -35px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-size: contain;
+  
+      @include media('>=tablet') {
+        height: 100%;
+        background-position: -40px 30%;
+      }
+  
+      @include media('>=desktop') {
+        background-position: -70px 36%;
+        background-size: 30%;
+      }
+    }
+  
+    .teaserContent {
+      position: relative;
+      padding: 200px 15px 30px;
+      color: white;
+  
+      @include media('>=tablet') {
+        padding: 30px 15px 30px 187px;
+      }
+  
+      @include media('>=desktop') {
+        padding: 30px 15px 30px 215px;
+      }
+  
+      .title {
+        font-weight: 500;
+        font-family: $btCurve;
+        display: block;
+        margin-bottom: 10px;
+        @include fontSizes(24px, 32px);
+  
+        @include media('>=tablet') {
+          @include fontSizes(28px, 36px);
+        }
+  
+        @include media('>=desktop') {
+          @include fontSizes(32px, 40px);
+          margin-bottom: 5px;
+        }
+      }
+  
+      p {
+        font-family: $btCurve;
+        @include fontSizes(20px, 28px);
+        color: inherit;
+  
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }

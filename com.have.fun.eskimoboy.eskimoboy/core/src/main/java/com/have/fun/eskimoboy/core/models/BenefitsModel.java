@@ -3,6 +3,7 @@ package com.have.fun.eskimoboy.core.models;
 import com.google.gson.Gson;
 import com.have.fun.eskimoboy.core.models.beans.BenefitItem;
 import com.have.fun.eskimoboy.core.util.UrlUtils;
+import org.apache.commons.lang.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
@@ -12,6 +13,7 @@ import org.apache.sling.models.annotations.injectorspecific.SlingObject;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
 import javax.annotation.PostConstruct;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -47,7 +49,9 @@ public class BenefitsModel {
     }
 
     private List<BenefitItem> getUpdatedBenefits(String[] benefits) {
-        return Stream.of(benefits)
+        return ArrayUtils.isEmpty(benefits)
+                ? Collections.emptyList()
+                : Stream.of(benefits)
                 .map(item -> GSON.fromJson(item, BenefitItem.class))
                 .map(this::updateBenefitLinkPath)
                 .collect(Collectors.toList());

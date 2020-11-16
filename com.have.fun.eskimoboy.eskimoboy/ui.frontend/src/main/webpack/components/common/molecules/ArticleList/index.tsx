@@ -4,18 +4,18 @@ import classNames from 'classnames';
 import styles from './styles.module.scss';
 
 export type ArticleItemType = {
-  title: string,
-  text: string,
-  altText?: string,
-  image?: string,
-  linkTitle?: string,
-  linkPath?: string,
-  analyticsLinkName?: string
+  title: string;
+  text: string;
+  altText?: string;
+  image?: string;
+  linkTitle?: string;
+  linkPath?: string;
+  analyticsLinkName?: string;
 };
 
 type ArticleListProps = {
-  articles: ArticleItemType[],
-  isArticleSmallSize?: boolean | false
+  articles: ArticleItemType[];
+  isArticleSmallSize?: boolean | false;
 };
 
 export const ArticleList: React.FC<ArticleListProps> = ({

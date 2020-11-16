@@ -6,9 +6,9 @@ import styles from './styles.module.scss';
 import {Container} from '../common/atoms';
 
 type TeaserProps = {
-    headline?: string,
-    text?: string,
-    image?: string,
+    headline?: string;
+    text?: string;
+    image?: string;
 };
 
 const Teaser: React.FC<TeaserProps> = ({

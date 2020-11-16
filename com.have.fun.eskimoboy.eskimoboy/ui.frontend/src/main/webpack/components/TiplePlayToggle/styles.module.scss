@@ -1,0 +1,165 @@
+@import "src/main/webpack/base/sass/_shared.scss";
+
+.triplePlayWrapper {
+  background: $bt-light-blue;
+  box-shadow: 0px 2px 4px $bt-stone;
+  position: relative;
+  margin-bottom: 24px;
+  &:after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: -50px;
+    background: $bt-light-blue;
+    left: calc(50% - 20px);
+    box-sizing: border-box;
+    transform-origin: 0 0;
+    box-shadow: -1px 2px 4px $bt-stone;
+    transform: translateX(-50%) rotate(-45deg) skew(20deg, 20deg);
+  }
+}
+
+.triplePlayHolder {
+  padding: 30px 15px;
+  z-index: 1;
+  position: relative;
+  background: $bt-light-blue;
+  max-width: 320px;
+  margin: 0 auto;
+  * {
+    font-family: $btCurve;
+    color: $black;
+  }
+  @include media('>=480px') {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  @include media('>=tablet') {
+    padding: 40px 0;
+  }
+  @include media('>=desktop') {
+    padding: 60px 0;
+  }
+}
+
+.triplePlayHeading {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 500;
+  @include fontSizes(24px, 32px);
+  @include media('>=tablet') {
+    @include fontSizes(28px, 36px);
+
+  }
+  @include media('>=desktop') {
+    @include fontSizes(32px, 40px);
+  }
+}
+
+.triplePlayDescription {
+  display: block;
+  @include fontSizes(20px, 28px);
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.triplePlayLink {
+  text-align: center;
+  margin: 0;
+  @include fontSizes(16px, 21px);
+  strong {
+    font-weight: 100;
+    &:before,
+    &:after {
+      height: 1px;
+      width: 6px;
+    }
+    &:before {
+      top: calc(50% - 1px);
+    }
+    &:after {
+      top: calc(50% + 3px);
+
+    }
+  }
+}
+.triplePlayChoose {
+  margin-top: 30px;
+}
+
+// Toggle Panel
+.addPanel {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+  background: $bt-indigo;
+  border-radius: 8px;
+  margin-top: 30px;
+  * {
+    color: $white;
+  }
+  @include media('>=480px') {
+    min-height: 58px;
+    padding: 10px 37px 10px 28px;
+  }
+}
+
+.addPanelIconWrapper {
+  position: relative;
+  margin-right: 15px;
+  display: flex;
+  align-self: stretch;
+  border-right: 1px solid $white;
+  svg {
+    margin-right: 17px;
+  }
+  @include media('>=480px') {
+    margin-left: 0;
+    svg {
+      margin-right: 27px;
+    }
+  }
+}
+
+.addPanelIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addPanelChoose {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  @include media('>=480px') {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    flex: 1;
+  }
+}
+
+.addPanelTitle {
+  @include fontSizes(20px, 28px);
+  margin-bottom: 6px;
+  display: block;
+  width: 100%;
+  @include media('>=480px') {
+    margin: 0;
+    padding-right: 15px;
+  }
+}
+
+.addPanelText {
+  @include fontSizes(20px, 28px);
+}
+
+.addPanelCheck {
+  display: flex;
+  align-items: center;
+  @include media('>=480px') {
+    padding-right: 8px;
+  }
+}

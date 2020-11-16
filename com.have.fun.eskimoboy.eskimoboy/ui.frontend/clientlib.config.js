@@ -188,5 +188,41 @@ module.exports = {
           ],
         }
       },
+      {
+        ...defaults,
+        name: 'skm.ProductBreakdown',
+        categories: ['skm.ProductBreakdown'],
+        dependencies: [
+          'skm.core',
+          'ui.frontend.commons',
+          'ui.frontend.vendors'
+        ],
+        assets: {
+          js: [
+            'dist/clientlib-site/js/*ProductBreakdown*.js',
+          ],
+          css: [
+            'dist/clientlib-site/css/*ProductBreakdown*.css',
+          ],
+        }
+      },
+      {
+        ...defaults,
+        name: 'skm.TriplePlayToggle',
+        categories: ['skm.TriplePlayToggle'],
+        dependencies: [
+          'skm.core',
+          'ui.frontend.commons',
+          'ui.frontend.vendors'
+        ],
+        assets: {
+          js: [
+            'dist/clientlib-site/js/*TriplePlayToggle*.js',
+          ],
+          css: [
+            'dist/clientlib-site/css/*TriplePlayToggle*.css',
+          ],
+        }
+      },
     ]
 };

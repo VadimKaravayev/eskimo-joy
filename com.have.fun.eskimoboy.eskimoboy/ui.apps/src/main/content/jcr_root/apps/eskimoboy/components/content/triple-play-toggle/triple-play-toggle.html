@@ -1,0 +1,19 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories='skm.TriplePlayToggle'}"></sly>
+
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}">
+    <div class="cq-placeholder" data-emptyText="${component.title}"></div>
+</sly>
+
+<sly data-sly-use.model="com.have.fun.eskimoboy.core.models.TriplePlayToggleModel"></sly>
+
+<div class="aem-react-component" data-component-name="SKM_TriplePlayToggle" data-sly-attribute.data-config='{
+    "headline": "${properties.headline}",
+    "secondaryHeadline": ${model.secondaryHeadline},
+    "toggleText": "${properties.toggleText}",
+    "linkTitle": "${properties.linkTitle}",
+    "linkPath": "${model.linkPath}",
+    "analyticsLinkName": "${properties.analyticsLinkName}",
+    "isActiveByDefault": "${properties.isActiveByDefault}",
+    "queryParameterName": "${properties.queryParameterName}"
+}'></div>

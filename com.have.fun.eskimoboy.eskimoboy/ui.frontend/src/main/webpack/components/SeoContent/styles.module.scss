@@ -1,0 +1,130 @@
+@import "src/main/webpack/base/sass/_shared.scss";
+
+.deals {
+    &Holder {
+        width: 100%;
+        text-align: center;
+        padding: 30px 0;
+        * {
+            color: $black;
+        }
+    }
+
+    &Title {
+        font-family: $btCurve;
+        margin-bottom: 20px;
+    }
+
+    &Subtitle {
+        font-family: $btCurve;
+        display: block;
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 30px;
+        color: $black;
+    }
+    @include media('>=tablet') {
+        &Holder {
+          padding: 40px 0 39px;
+        }
+        &Title {
+          max-width: 692px;
+          margin: 0 auto 20px;
+        }
+        &Subtitle {
+          max-width: 600px;
+          margin: 0 auto 30px;
+        }
+      }
+      @include media('>=desktop') {
+        &Holder {
+          margin: 0 auto;
+          padding: 60px 0;
+        }
+        &Title {
+          max-width: 1100px;
+        }
+        &Subtitle {
+          max-width: 100%;
+        }
+      }
+}
+
+.dealsPeace {
+    border: 1px solid $grey-medium;
+    padding: 21px 16px 30px;
+    border-radius: 8px;
+    &Heading {
+      display: block;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 14px;
+      font-family: $btCurve;
+    }
+    @include media('>=desktop') {
+      &Heading {
+        max-width: 960px;
+        margin: 0 auto 14px;
+      }
+    }
+  }
+
+  .packages {
+    &Holder {
+      display: flex;
+      flex-flow: row wrap;
+      @include media('>=tablet') {
+        justify-content: center;
+      }
+    }
+  }
+
+  .package {
+    &Item {
+      width: 100%;
+      text-align: center;
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+    }
+    &Name {
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 4px;
+      font-family: $btCurve;
+      font-weight: 500;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:before {
+        content: '';
+        background-image: url('/etc.clientlibs/btb-site-refresh/clientlibs/images/resources/icons/tick-indigo.svg');
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        width: 18px;
+        height: 14px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+      }
+    }
+    &Description {
+      font-size: 16px;
+      line-height: 24px;
+      font-family: $btCurve;
+    }
+    @include media('>=tablet') {
+      &Item {
+        max-width: 290px;
+        &:not(:last-child) {
+          margin-right: 20px;
+          margin-bottom: 0;
+        }
+      }
+    }
+    @include media('>=desktop') {
+      &Item {
+        max-width: 470px;
+      }
+    }
+  }

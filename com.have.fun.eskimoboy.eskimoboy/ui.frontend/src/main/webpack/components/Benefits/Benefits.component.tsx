@@ -8,8 +8,8 @@ import { ArticleList, ArticleItemType } from '../common/molecules/ArticleList'
 
 
 type BenefitsProps = {
-  headline?: string,
-  products: ArticleItemType[]
+  headline?: string;
+  products: ArticleItemType[];
 };
 
 const Benefits: React.FC<BenefitsProps> = ({
