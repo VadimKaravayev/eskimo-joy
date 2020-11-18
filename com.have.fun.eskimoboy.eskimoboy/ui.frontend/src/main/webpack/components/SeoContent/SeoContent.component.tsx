@@ -11,6 +11,7 @@ interface seoItem {
 
 type SeoContentProps = {
     headline: string;
+    isHiddenHeadline?: string;
     headlineTag: string;
     secondaryHeadline: string;
     featureHeadline: string;
@@ -19,6 +20,7 @@ type SeoContentProps = {
 
 const SeoContent: React.FC<SeoContentProps> = ({
     headline,
+    isHiddenHeadline,
     headlineTag,
     secondaryHeadline,
     featureHeadline,
@@ -36,15 +38,22 @@ const SeoContent: React.FC<SeoContentProps> = ({
         ))
     );
 
+    const isHidden = isHiddenHeadline === 'true';
+    const displayMode = isHidden ? 'none' : 'block';
+
     return (
-        <div className={styles.dealsHolder}>
+        <div className={styles.dealsHolder} style={{ display: displayMode }}>
             <Container>
                 <Tag className={styles.dealsTitle}>{headline}</Tag>
-                <span className={styles.dealsSubtitle}>{secondaryHeadline}</span>
-                <div className={styles.dealsPeace}>
-                    <span className={styles.dealsPeaceHeading}>{featureHeadline}</span>
-                    <div className={styles.packagesHolder}>{renderSeoItems()}</div>
-                </div>
+              { !isHidden && (
+                <>
+                  <span className={styles.dealsSubtitle}>{secondaryHeadline}</span>
+                  <div className={styles.dealsPeace}>
+                      <span className={styles.dealsPeaceHeading}>{featureHeadline}</span>
+                      <div className={styles.packagesHolder}>{renderSeoItems()}</div>
+                  </div>
+                </>
+              )}
             </Container>
         </div>
     );

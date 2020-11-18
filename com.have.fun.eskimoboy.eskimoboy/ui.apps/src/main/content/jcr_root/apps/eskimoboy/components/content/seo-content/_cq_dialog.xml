@@ -5,103 +5,50 @@
           sling:resourceType="cq/gui/components/authoring/dialog">
     <content
             jcr:primaryType="nt:unstructured"
+            granite:class="seo-content"
             sling:resourceType="granite/ui/components/coral/foundation/container">
         <items jcr:primaryType="nt:unstructured">
-            <tabs
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="granite/ui/components/coral/foundation/tabs">
+            <tabs jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/tabs">
                 <items jcr:primaryType="nt:unstructured">
-                    <general
-                            jcr:primaryType="nt:unstructured"
-                            jcr:title="General"
-                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                    <general jcr:primaryType="nt:unstructured" jcr:title="General" sling:resourceType="granite/ui/components/coral/foundation/container">
                         <items jcr:primaryType="nt:unstructured">
-                            <columns
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
-                                    margin="{Boolean}true">
+                            <columns jcr:primaryType="nt:unstructured" margin="true" sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
                                 <items jcr:primaryType="nt:unstructured">
-                                    <column
-                                            jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <column jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
                                         <items jcr:primaryType="nt:unstructured">
-                                            <headline
-                                                    jcr:primaryType="nt:unstructured"
-                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                    fieldLabel="Headline"
-                                                    required="{Boolean}true"
-                                                    name="./headline"/>
-                                            <headlineTag
-                                                    jcr:primaryType="nt:unstructured"
-                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
-                                                    fieldLabel="Headline Tag"
-                                                    name="./headlineTag">
+                                            <headline jcr:primaryType="nt:unstructured" fieldLabel="Headline" name="./headline" required="true" sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                                            <headlineTag jcr:primaryType="nt:unstructured" fieldLabel="Headline Tag" name="./headlineTag" sling:resourceType="granite/ui/components/coral/foundation/form/select">
                                                 <items jcr:primaryType="nt:unstructured">
-                                                    <h1
-                                                        jcr:primaryType="nt:unstructured"
-                                                        text="H1"
-                                                        value="h1"/>
-                                                    <h2
-                                                        jcr:primaryType="nt:unstructured"
-                                                        text="H2"
-                                                        value="h2"/>
+                                                    <h1 jcr:primaryType="nt:unstructured" text="H1" value="h1"/>
+                                                    <h2 jcr:primaryType="nt:unstructured" text="H2" value="h2"/>
                                                 </items>
                                             </headlineTag>
-                                            <secondaryHeadline
-                                                    jcr:primaryType="nt:unstructured"
-                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                    fieldLabel="Secondary Headline"
-                                                    name="./secondaryHeadline"/>
+                                            <isHiddenHeadline jcr:primaryType="nt:unstructured" name="./isHiddenHeadline" sling:resourceType="granite/ui/components/coral/foundation/form/checkbox" text="Is Hidden Headline" uncheckedValue="false" value="true">
+                                                <granite:data jcr:primaryType="nt:unstructured" cq-dialog-toggle-item=".headline-toggle"/>
+                                            </isHiddenHeadline>
+                                            <secondaryHeadline jcr:primaryType="nt:unstructured" fieldLabel="Secondary Headline" granite:class="headline-toggle" name="./secondaryHeadline" sling:resourceType="granite/ui/components/coral/foundation/form/textfield">
+                                                <granite:data jcr:primaryType="nt:unstructured" enable-field-hiding="true"/>
+                                            </secondaryHeadline>
                                         </items>
                                     </column>
                                 </items>
                             </columns>
                         </items>
                     </general>
-                    <seoItems
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/container"
-                            jcr:title="Seo Items">
+                    <seoItems jcr:primaryType="nt:unstructured" jcr:title="Seo Items" sling:resourceType="granite/ui/components/coral/foundation/container">
                         <items jcr:primaryType="nt:unstructured">
-                            <columns
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
-                                    margin="{Boolean}true">
+                            <columns jcr:primaryType="nt:unstructured" margin="true" sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
                                 <items jcr:primaryType="nt:unstructured">
-                                    <column
-                                            jcr:primaryType="nt:unstructured"
-                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <column jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
                                         <items jcr:primaryType="nt:unstructured">
-                                            <featureHeadline
-                                                    jcr:primaryType="nt:unstructured"
-                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                    fieldLabel="Feature Headline"
-                                                    name="./featureHeadline"/>
-                                            <seoItemsContent
-                                                    jcr:primaryType="nt:unstructured"
-                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
-                                                    fieldLabel="Seo Items Content"
-                                                    validation="field-limit-2">
-                                                <field
-                                                        jcr:primaryType="nt:unstructured"
-                                                        sling:resourceType="granite/ui/components/foundation/form/fieldset"
-                                                        acs-commons-nested="JSON_STORE"
-                                                        name="./seoItems">
+                                            <featureHeadline jcr:primaryType="nt:unstructured" fieldLabel="Feature Headline" name="./featureHeadline" sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                                            <seoItemsContent jcr:primaryType="nt:unstructured" fieldLabel="Seo Items Content" sling:resourceType="granite/ui/components/coral/foundation/form/multifield" validation="field-limit-2">
+                                                <field jcr:primaryType="nt:unstructured" acs-commons-nested="JSON_STORE" name="./seoItems" sling:resourceType="granite/ui/components/foundation/form/fieldset">
                                                     <items jcr:primaryType="nt:unstructured">
-                                                        <container
-                                                                jcr:primaryType="nt:unstructured"
-                                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <container jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
                                                             <items jcr:primaryType="nt:unstructured">
-                                                                <title
-                                                                        jcr:primaryType="nt:unstructured"
-                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                                        fieldLabel="Title"
-                                                                        name="./title"/>
-                                                                <description
-                                                                        jcr:primaryType="nt:unstructured"
-                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
-                                                                        fieldLabel="Description"
-                                                                        name="./description"/>
+                                                                <title jcr:primaryType="nt:unstructured" fieldLabel="Title" name="./title" sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                                                                <description jcr:primaryType="nt:unstructured" fieldLabel="Description" name="./description" sling:resourceType="granite/ui/components/coral/foundation/form/textarea"/>
                                                             </items>
                                                         </container>
                                                     </items>
@@ -112,6 +59,7 @@
                                 </items>
                             </columns>
                         </items>
+                        <granite:data jcr:primaryType="nt:unstructured" hide-tab="true"/>
                     </seoItems>
                 </items>
             </tabs>

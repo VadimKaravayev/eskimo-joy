@@ -75,6 +75,7 @@
       flex-flow: row wrap;
       @include media('>=tablet') {
         justify-content: center;
+        flex-flow: row;
       }
     }
   }
