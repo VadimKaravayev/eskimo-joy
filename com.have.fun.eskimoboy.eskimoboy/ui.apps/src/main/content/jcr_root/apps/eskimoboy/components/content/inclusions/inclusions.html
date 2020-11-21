@@ -1,0 +1,14 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories='skm.Inclusions'}"></sly>
+
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}">
+    <div class="cq-placeholder" data-emptyText="${component.title}"></div>
+</sly>
+
+<sly data-sly-use.model="com.have.fun.eskimoboy.core.models.InclusionsModel"></sly>
+
+<div class="aem-react-component" data-component-name="SKM_Inclusions" data-sly-attribute.data-config='{
+        "headline": "${properties.headline}",
+        "tabLeft": ${model.leftTab},
+        "tabRight": ${model.rightTab}
+}'></div>

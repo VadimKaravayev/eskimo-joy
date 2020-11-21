@@ -224,5 +224,23 @@ module.exports = {
           ],
         }
       },
+      {
+        ...defaults,
+        name: 'skm.Inclusions',
+        categories: ['skm.Inclusions'],
+        dependencies: [
+          'skm.core',
+          'ui.frontend.commons',
+          'ui.frontend.vendors'
+        ],
+        assets: {
+          js: [
+            'dist/clientlib-site/js/*Inclusions*.js',
+          ],
+          css: [
+            'dist/clientlib-site/css/*Inclusions*.css',
+          ],
+        }
+      },
     ]
 };

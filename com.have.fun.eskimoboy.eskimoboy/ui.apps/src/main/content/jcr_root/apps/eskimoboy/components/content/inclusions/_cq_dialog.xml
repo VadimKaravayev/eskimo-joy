@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="SKM - Inclusions dialog"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items jcr:primaryType="nt:unstructured">
+                    <general jcr:primaryType="nt:unstructured" jcr:title="General" sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <container jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <headline jcr:primaryType="nt:unstructured" fieldLabel="Headline" name="./headline" sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                                        </items>
+                                    </container>
+                                </items>
+                            </columns>
+                        </items>
+                    </general>
+                    <leftTab jcr:primaryType="nt:unstructured" jcr:title="Left Tab" sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <container jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <tabTitle jcr:primaryType="nt:unstructured" fieldLabel="Tab Title" name="./leftTab/tabTitle" sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                                            <tabAnalyticsName jcr:primaryType="nt:unstructured" fieldLabel="Tab Analytics Name" name="./leftTab/tabAnalyticsName" sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                                            <blocks jcr:primaryType="nt:unstructured" composite="true" sling:resourceType="granite/ui/components/coral/foundation/form/multifield">
+                                                <field jcr:primaryType="nt:unstructured" name="./leftTab" sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <container jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <blockTitle jcr:primaryType="nt:unstructured" fieldLabel="Block Title" name="./block/blockTitle" sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                                                                <block jcr:primaryType="nt:unstructured" composite="true" sling:resourceType="granite/ui/components/coral/foundation/form/multifield">
+                                                                    <field jcr:primaryType="nt:unstructured" name="./block" sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                            <container jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                                <items jcr:primaryType="nt:unstructured">
+                                                                                    <title jcr:primaryType="nt:unstructured" fieldLabel="Title" name="./title" sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                                                                                    <description jcr:primaryType="nt:unstructured" fieldLabel="Description" name="./description" sling:resourceType="granite/ui/components/coral/foundation/form/textarea"/>
+                                                                                    <strikeThrough jcr:primaryType="nt:unstructured" name="./strikeThrough" sling:resourceType="granite/ui/components/coral/foundation/form/checkbox" text="Strike Through" uncheckedValue="false" value="true"/>
+                                                                                    <linkTitle jcr:primaryType="nt:unstructured" fieldLabel="Link Title" name="./linkTitle" sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                                                                                    <linkPath jcr:primaryType="nt:unstructured" fieldLabel="Link Path" name="./linkPath" rootPath="/content" sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
+                                                                                    <analyticsLinkName jcr:primaryType="nt:unstructured" fieldLabel="Analytics Link Name" name="./analyticsLinkName" sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                                                                                </items>
+                                                                            </container>
+                                                                        </items>
+                                                                    </field>
+                                                                </block>
+                                                            </items>
+                                                        </container>
+                                                    </items>
+                                                </field>
+                                            </blocks>
+                                        </items>
+                                    </container>
+                                </items>
+                            </columns>
+                        </items>
+                    </leftTab>
+                    <rightTab jcr:primaryType="nt:unstructured" jcr:title="Right Tab" sling:resourceSuperType="eskimoboy/components/content/inclusions/cq:dialog/content/items/tabs/items/leftTab" sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns jcr:primaryType="nt:unstructured">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <container jcr:primaryType="nt:unstructured">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <tabTitle jcr:primaryType="nt:unstructured" name="./rightTab/tabTitle"/>
+                                            <tabAnalyticsName jcr:primaryType="nt:unstructured" name="./rightTab/tabAnalyticsName"/>
+                                            <blocks jcr:primaryType="nt:unstructured" sling:resourceSuperType="eskimoboy/components/content/inclusions/cq:dialog/content/items/tabs/items/leftTab/items/columns/items/container/items/blocks" sling:resourceType="granite/ui/components/coral/foundation/form/multifield">
+                                                <field jcr:primaryType="nt:unstructured" name="./rightTab"/>
+                                            </blocks>
+                                        </items>
+                                    </container>
+                                </items>
+                            </columns>
+                        </items>
+                    </rightTab>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

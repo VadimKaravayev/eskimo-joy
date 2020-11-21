@@ -1,0 +1,179 @@
+{
+  "filledInclusions": {
+    "jcr:primaryType": "nt:unstructured",
+    "headline": "Inclusive features and benefits",
+    "sling:resourceType": "eskimoboy/components/content/inclusions",
+    "leftTab": {
+      "jcr:primaryType": "nt:unstructured",
+      "tabAnalyticsName": "Enhanced",
+      "tabTitle": "Enhanced",
+      "item0": {
+        "jcr:primaryType": "nt:unstructured",
+        "block": {
+          "jcr:primaryType": "nt:unstructured",
+          "blockTitle": "BROADBAND",
+          "item0": {
+            "jcr:primaryType": "nt:unstructured",
+            "description": "You’re automatically switched to 4G if there’s a problem.",
+            "linkTitle": "Learn more",
+            "title": "4G Assure - broadband back up",
+            "strikeThrough": "false",
+            "linkPath": "/content/bt/business/en/products"
+          },
+          "item1": {
+            "jcr:primaryType": "nt:unstructured",
+            "description": "Receive compensation if 4G Assure fails to activate within 30 minutes of you reporting a fixed line fault.",
+            "title": "Always Connected Guarantee for 4G",
+            "strikeThrough": "false"
+          },
+          "item2": {
+            "jcr:primaryType": "nt:unstructured",
+            "description": "No catches, no caps and no hidden penalties.",
+            "title": "Unlimited broadband data",
+            "strikeThrough": "false"
+          }
+        }
+      },
+      "item1": {
+        "jcr:primaryType": "nt:unstructured",
+        "block": {
+          "jcr:primaryType": "nt:unstructured",
+          "blockTitle": "DIGITAL PHONE LINE",
+          "item0": {
+            "jcr:primaryType": "nt:unstructured",
+            "description": "The future of phone calls is through the internet.",
+            "title": "It’s time to talk digital",
+            "strikeThrough": "false"
+          },
+          "item1": {
+            "jcr:primaryType": "nt:unstructured",
+            "description": "Take your landline number with you wherever you go.",
+            "title": "Make and receive landline calls by app",
+            "strikeThrough": "false"
+          },
+          "item2": {
+            "jcr:primaryType": "nt:unstructured",
+            "description": "Designed to work with your new digital phone line.",
+            "title": "Free cordless handset",
+            "strikeThrough": "false"
+          }
+        }
+      },
+      "item2": {
+        "jcr:primaryType": "nt:unstructured",
+        "block": {
+          "jcr:primaryType": "nt:unstructured",
+          "blockTitle": "SERVICE",
+          "item0": {
+            "jcr:primaryType": "nt:unstructured",
+            "description": "The price stays the same for your whole contract.",
+            "title": "Fixed Price Guarantee",
+            "strikeThrough": "false"
+          },
+          "item1": {
+            "jcr:primaryType": "nt:unstructured",
+            "description": "We’ll have you back up and running promptly.",
+            "title": "End of next working day fix",
+            "strikeThrough": "false"
+          },
+          "item2": {
+            "jcr:primaryType": "nt:unstructured",
+            "description": "It’s like having your own IT team on hand.",
+            "linkTitle": "Learn more",
+            "title": "Enhanced IT support",
+            "strikeThrough": "false",
+            "linkPath": "/content/bt/business/en/products/computing-apps/enhanced-it-support"
+          }
+        }
+      }
+    },
+    "rightTab": {
+      "jcr:primaryType": "nt:unstructured",
+      "tabAnalyticsName": "Essential",
+      "tabTitle": "Essential",
+      "item0": {
+        "jcr:primaryType": "nt:unstructured",
+        "block": {
+          "jcr:primaryType": "nt:unstructured",
+          "blockTitle": "BROADBAND",
+          "item0": {
+            "jcr:primaryType": "nt:unstructured",
+            "description": "You’re automatically switched to 4G if there’s a problem.",
+            "linkTitle": "Learn more",
+            "title": "4G Assure - broadband back up",
+            "strikeThrough": "true",
+            "linkPath": "/content/bt/business/en/products/computing-apps/enhanced-it-support"
+          },
+          "item1": {
+            "jcr:primaryType": "nt:unstructured",
+            "description": "Receive compensation if 4G Assure fails to activate within 30 minutes of you reporting a fixed line fault.",
+            "title": "Always Connected Guarantee for 4G",
+            "strikeThrough": "true"
+          },
+          "item2": {
+            "jcr:primaryType": "nt:unstructured",
+            "description": "No catches, no caps and no hidden penalties.",
+            "title": "Unlimited broadband data",
+            "strikeThrough": "false"
+          }
+        }
+      },
+      "item1": {
+        "jcr:primaryType": "nt:unstructured",
+        "block": {
+          "jcr:primaryType": "nt:unstructured",
+          "blockTitle": "DIGITAL PHONE LINE",
+          "item0": {
+            "jcr:primaryType": "nt:unstructured",
+            "description": "The future of phone calls is through the internet.",
+            "title": "It’s time to talk digital",
+            "strikeThrough": "false"
+          },
+          "item1": {
+            "jcr:primaryType": "nt:unstructured",
+            "description": "Take your landline number with you wherever you go.",
+            "title": "Make and receive landline calls by app",
+            "strikeThrough": "false"
+          },
+          "item2": {
+            "jcr:primaryType": "nt:unstructured",
+            "description": "Designed to work with your new digital phone line.",
+            "title": "Free cordless handset",
+            "strikeThrough": "false"
+          }
+        }
+      },
+      "item2": {
+        "jcr:primaryType": "nt:unstructured",
+        "block": {
+          "jcr:primaryType": "nt:unstructured",
+          "blockTitle": "SERVICE",
+          "item0": {
+            "jcr:primaryType": "nt:unstructured",
+            "description": "The price stays the same for your whole contract.",
+            "title": "Fixed Price Guarantee",
+            "strikeThrough": "false"
+          },
+          "item1": {
+            "jcr:primaryType": "nt:unstructured",
+            "description": "We’ll have you back up and running promptly.",
+            "title": "End of next working day fix",
+            "strikeThrough": "false"
+          },
+          "item2": {
+            "jcr:primaryType": "nt:unstructured",
+            "description": "It’s like having your own IT team on hand.",
+            "linkTitle": "Learn more",
+            "title": "Enhanced IT support",
+            "strikeThrough": "true",
+            "linkPath": "/content/bt/business/en/products/computing-apps/enhanced-it-support"
+          }
+        }
+      }
+    }
+  },
+  "emptyInclusions": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "bt/sme-transform/components/content/inclusions"
+  }
+}

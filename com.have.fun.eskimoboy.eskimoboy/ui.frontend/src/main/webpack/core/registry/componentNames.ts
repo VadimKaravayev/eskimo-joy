@@ -7,6 +7,7 @@ const SKM_Benefits = 'SKM_Benefits';
 const SKM_ProductBreakdown = 'SKM_ProductBreakdown';
 const SKM_TriplePlayToggle = 'SKM_TriplePlayToggle';
 const SKM_ProductListing = 'SKM_ProductListing';
+const SKM_Inclusions = 'SKM_Inclusions';
 
 export const ComponentNames = {
   SKM_Alpha,
@@ -18,4 +19,5 @@ export const ComponentNames = {
   SKM_ProductBreakdown,
   SKM_TriplePlayToggle,
   SKM_ProductListing,
+  SKM_Inclusions,
 };
